@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.churchImg{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+}
+nav{
+display: flex;
+justify-content: space-between;
+padding: 5px 30px;
+align-items: center;
+gap: 15px;
+background: rgb(255,193,32);
+background: -moz-linear-gradient(6deg, rgba(255,193,32,1) 0%, rgba(208,217,87,1) 31%, rgba(138,215,147,1) 57%, rgba(79,213,189,1) 79%, rgba(23,211,230,1) 100%, rgba(217,217,217,1) 100%);
+background: -webkit-linear-gradient(6deg, rgba(255,193,32,1) 0%, rgba(208,217,87,1) 31%, rgba(138,215,147,1) 57%, rgba(79,213,189,1) 79%, rgba(23,211,230,1) 100%, rgba(217,217,217,1) 100%);
+background: linear-gradient(6deg, rgba(255,193,32,1) 0%, rgba(208,217,87,1) 31%, rgba(138,215,147,1) 57%, rgba(79,213,189,1) 79%, rgba(23,211,230,1) 100%, rgba(217,217,217,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc120",endColorstr="#d9d9d9",GradientType=1);
+}
+.nav__title{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+h1{
+    color: white;
+}
+
+
+.nav__ul{
+    display: flex;
+    gap: 15px;
+
+    list-style-type: none;
+}
+.nav__a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-image: url("https://scontent-sin6-4.xx.fbcdn.net/v/t1.6435-9/67355713_2459963754049613_6610401641495527424_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=3-286V8qhOgQ7kNvgHTh62W&_nc_ht=scontent-sin6-4.xx&oh=00_AYC2LhdEmjZhn22KzqkFpiXX35RzFRNc0BX-jOcqzv7aIA&oe=66CB0DD4");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.textInput{
+    width: 500px;
+    height: 40px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.548);
+    box-shadow: 1px 1px 10px 2px rgb(0, 0, 0);
+    border-radius: 20px;
+
+}
+.textInput::placeholder{
+    padding: 5px 10px;
+    color: black;
+}
+
+
+.send__btn{
+    width: 100px;
+    height: 45px;
+   border-radius: 25px;
+   cursor: pointer;
+       background-color: rgba(255, 255, 255, 0.548);
+    box-shadow: 1px 1px 10px 2px rgb(62, 62, 62);
+}
+.send__btn:hover{
+    background-color: rgba(75, 75, 235, 0.548);
+    color: white;
+}
+.header__div{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    border: 2px solid black;
+  background: linear-gradient(90deg, rgba(139,166,207,1) 8%, rgba(180,176,91,1) 47%, rgba(180,206,232,1) 98%);
+}
