@@ -23,6 +23,7 @@ class Article(db.Model):
 @app.route('/')
 def posts():
     articles = Article.query.order_by(Article.date).all()
+    arafvr = "asdwee"
     return render_template('index.html', articles=articles)
 
 
