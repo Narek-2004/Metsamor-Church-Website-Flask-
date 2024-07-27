@@ -20,15 +20,8 @@ class Article(db.Model):
         return '<Article %r>' % self.id
 
 
-@app.route('/')
-def posts():
-    articles = Article.query.order_by(Article.date).all()
-    arafvr = "asdwee"
-    return render_template('index.html', articles=articles)
-
-
-@app.route('/', methods=['GET', 'POST'])
-def index():
+@app.route('/admin', methods=['GET', 'POST'])
+def daily_word():
     if request.method == 'POST':
         book = request.form['book-name']
         text = request.form['chapter']
@@ -42,7 +35,13 @@ def index():
         except:
             return 'Something went wrong'
     else:
-        return render_template('index.html')
+        return render_template('admin.html')
+
+
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    articles = Article.query.order_by().all()
+    return render_template('index.html', articles=articles)
 
 
 if __name__ == '__main__':
